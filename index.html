@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACTICAL MAYHEM — Standalone Indie Hardcore Taktik & Cyber-Bunker</title>
+    <meta name="description" content="Tactical Mayhem: Ein eigenständiges Indie-Projekt mit 5v5 Hardcore-Taktik, 3D Ingame Cyber-OS, detaillierter Ballistik und Sandbox-Physik. DRM-frei & Community-getrieben.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Rajdhani:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-mayhem">
+    <!-- Atmospheric CRT Overlays -->
+    <div class="grain-overlay"></div>
+    <div class="scanlines"></div>
+    <div class="ambient-glow glow-military"></div>
+    <div class="ambient-glow glow-green"></div>
+
+    <!-- Header Navigation -->
+    <header class="tactical-header">
+        <div class="header-container">
+            <a href="#" class="brand-group">
+                <img src="assets/tactical_mayhem_logo.jpg" alt="Tactical Mayhem Logo" class="brand-badge-img">
+                <div class="brand-info">
+                    <span class="brand-title">TACTICAL MAYHEM</span>
+                    <span class="brand-sub">// INDIE DEV PROTOCOL • v1.0.4</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about" class="nav-link"><span>01</span> ÜBER DAS PROJEKT</a>
+                <a href="#ballistics" class="nav-link"><span>02</span> BALLISTIK & SIMULATION</a>
+                <a href="#laptop" class="nav-link"><span>03</span> INGAME WORKSTATION</a>
+                <a href="#modes" class="nav-link"><span>04</span> SPIELMODI</a>
+                <a href="#terminal" class="nav-link"><span>05</span> DEV TERMINAL</a>
+                <a href="#faq" class="nav-link"><span>06</span> COMMUNITY & FAQ</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="server-status-tag">
+                    <span class="pulse-dot"></span>
+                    <span>BUILD v1.0.4 ONLINE</span>
+                </div>
+                <a href="#download" class="btn btn-header-dl">
+                    <span>DOWNLOADEN</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="about">
+        <div class="hero-container">
+            <div class="hero-text-col">
+                <div class="tactical-status-bar">
+                    <span class="status-bracket">[</span>
+                    <span class="status-code">TACTICAL MAYHEM // INDIE RELEASE</span>
+                    <span class="status-bracket">]</span>
+                    <span class="status-tag">COMMUNITY STANDALONE BUILD</span>
+                </div>
+
+                <h1 class="hero-headline">
+                    KOMPROMISSLOSE TAKTIK.<br>
+                    <span class="highlight-green">ECHTE SIMULATION & PHYSIK.</span>
+                </h1>
+
+                <p class="hero-lead">
+                    Tactical Mayhem ist ein eigenständiges Indie-Projekt für alle, die tiefgründige Spielmechaniken, 
+                    authentische Ballistik und unzensierten Multiplayer schätzen. 
+                    <strong>Von Grund auf unabhängig entwickelt – 100% fokussiert auf Gameplay und Community.</strong>
+                </p>
+                <p class="hero-sublead">
+                    Rundenbasierter 5v5 Taktik-Shooter mit 75% Schutzwesten-Absorption, 
+                    einem interaktiven <strong>3D Cyber-Laptop im Bunker</strong>, physikalischer Sandbox und Täuschungsmodi. 
+                    Kein Launcher-Zwang, keine invasive Telemetrie. ZIP entpacken, starten und spielen.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="FreeGrounds_v1.0.4.zip" class="btn btn-hero-primary" id="btnHeroDownload">
+                        <span class="btn-big-icon">⚡</span>
+                        <div class="btn-labels">
+                            <span class="btn-main">TACTICAL MAYHEM v1.0.4 DOWNLOADEN</span>
+                            <span class="btn-sub">Windows 64-Bit Standalone • 1.9 GB (.ZIP) • 100% Kostenlos</span>
+                        </div>
+                    </a>
+
+                    <a href="#terminal" class="btn btn-hero-secondary">
+                        <span class="btn-icon">📟</span>
+                        <div class="btn-labels">
+                            <span class="btn-main">DEV-TERMINAL ÖFFNEN</span>
+                            <span class="btn-sub">Befehle, Specs & Roadmap</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Proof Badges -->
+                <div class="hero-features-chips">
+                    <div class="feature-chip">
+                        <span class="chip-icon">🛡️</span>
+                        <span>Standalone & DRM-Frei</span>
+                    </div>
+                    <div class="feature-chip">
+                        <span class="chip-icon">🎯</span>
+                        <span>75% Schutzwesten-Absorption</span>
+                    </div>
+                    <div class="feature-chip">
+                        <span class="chip-icon">💻</span>
+                        <span>3D Ingame Cyber-OS</span>
+                    </div>
+                    <div class="feature-chip">
+                        <span class="chip-icon">🌐</span>
+                        <span>Server Browser & Direct IP</span>
+                    </div>
+                    <div class="feature-chip">
+                        <span class="chip-icon">🤝</span>
+                        <span>Community-Getrieben</span>
+                    </div>
+                </div>
+
+                <!-- Technical Stickers -->
+                <div class="hacker-stickers-row">
+                    <img src="assets/sticker_info_free.png" alt="Information Wants To Be Free" class="hacker-sticker">
+                    <img src="assets/sticker_break_build.png" alt="Break Build Repeat" class="hacker-sticker">
+                    <img src="assets/sticker_global_access.png" alt="Global Access" class="hacker-sticker">
+                </div>
+            </div>
+
+            <!-- Hero Visual Side -->
+            <div class="hero-visual-col">
+                <div class="hero-art-card">
+                    <img src="assets/hero_tactical_desk.jpg" alt="Tactical Mayhem Workstation" class="main-art-img">
+                    <div class="art-corner corner-tl"></div>
+                    <div class="art-corner corner-tr"></div>
+                    <div class="art-corner corner-bl"></div>
+                    <div class="art-corner corner-br"></div>
+                    
+                    <div class="hud-card hud-top-right">
+                        <span class="hud-tag">DEVLOG PROTOCOL</span>
+                        <span class="hud-val">PEER-TO-PEER LOBBIES</span>
+                        <span class="hud-sub">Integrierter Server Browser</span>
+                    </div>
+
+                    <div class="hud-card hud-bottom-left">
+                        <div class="hud-user-row">
+                            <img src="assets/gangster.png" alt="Unit Avatar" class="hud-avatar">
+                            <div>
+                                <span class="hud-user">Tactical_Dev</span>
+                                <span class="hud-status">"Build v1.0.4 ist live. Feedback und Bugreports gerne direkt einreichen!"</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="art-caption">
+                        <span class="caption-dot"></span>
+                        <span>BUNKER WORKSTATION // TACTICAL NODE v1.0.4 ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIE PROJEKT-PHILOSOPHIE -->
+    <section class="section manifest-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-header">[DIE PROJEKT-PHILOSOPHIE]</span>
+                <h2 class="section-title">TRANSPARENT, EIGENSTÄNDIG & COMMUNITY-FOKUSSIERT</h2>
+                <p class="section-desc">
+                    Entwickelt nach den Prinzipien klassischer Indie-Projekte: Respekt vor der Spielzeit, saubere Mechaniken und direkte Kommunikation.
+                </p>
+            </div>
+
+            <div class="manifest-grid-4">
+                <div class="manifest-card">
+                    <div class="manifest-icon">🛠️📋</div>
+                    <h3>Transparente Entwicklung</h3>
+                    <p>
+                        Keine künstlichen Paywalls. Jedes Update, jede Waffenbalance und jede Spielmechanik wird offen dokumentiert 
+                        und gemeinsam mit der Community iteriert.
+                    </p>
+                    <div class="card-tag">DEVLOGS</div>
+                </div>
+
+                <div class="manifest-card highlight-card">
+                    <div class="manifest-icon">💾⚡</div>
+                    <h3>Volle Spieler-Kontrolle</h3>
+                    <p>
+                        Kein Launcher-Zwang, keine Kontenbindung und keine invasive Telemetrie. 
+                        Das Spielarchiv herunterladen, entpacken und direkt über <code>FreeGrounds.exe</code> starten.
+                    </p>
+                    <div class="card-tag green">DRM-FREI</div>
+                </div>
+
+                <div class="manifest-card">
+                    <div class="manifest-icon">🎯🛡️</div>
+                    <h3>Tiefe Ballistik & Physik</h3>
+                    <p>
+                        Präzise Trefferzonen, kalkulierte Rüstungs-Absorption und freie physikalische Interaktion in der Spielwelt. 
+                        Taktik und Movement entscheiden über den Ausgang.
+                    </p>
+                    <div class="card-tag">SIMULATION</div>
+                </div>
+
+                <div class="manifest-card">
+                    <div class="manifest-icon">🌐🤝</div>
+                    <h3>Offener Multiplayer</h3>
+                    <p>
+                        Integrierter Server Browser mit LAN- und Direct-IP-Unterstützung. Spieler können eigene Lobbys hosten 
+                        und direkt über den integrierten Net-Code beitreten.
+                    </p>
+                    <div class="card-tag green">COMMUNITY</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE BALLISTICS & DAMAGE CALCULATOR -->
+    <section class="section ballistics-section" id="ballistics">
+        <div class="container">
+            <div class="calc-wrapper">
+                <div class="calc-header">
+                    <div class="calc-badge">🎯 SIMULATIONS-LABOR</div>
+                    <h2>BALLISTIK- & SCHUTZWESTEN-RECHNER</h2>
+                    <p>
+                        Schutzwesten absorbieren im Spiel 75% des Rumpfschadens. Teste live, wie Waffen und Trefferzonen berechnet werden:
+                    </p>
+                </div>
+
+                <div class="calc-panel">
+                    <div class="calc-controls-row">
+                        <div class="ctrl-box">
+                            <label class="ctrl-label">Waffe wählen:</label>
+                            <select id="weaponSelect" class="calc-select">
+                                <option value="ak">AK-74M (Sturmgewehr) • 34 Basis-Schaden</option>
+                                <option value="m4">M4A1 (Karabiner) • 30 Basis-Schaden</option>
+                                <option value="sniper">Scharfschützengewehr • 110 Basis-Schaden</option>
+                                <option value="shotgun">Schrotflinte (Nahkampf) • 120 Basis-Schaden</option>
+                                <option value="smg">Vector 9mm (Maschinenpistole) • 22 Basis-Schaden</option>
+                            </select>
+                        </div>
+
+                        <div class="ctrl-box">
+                            <label class="ctrl-label">Trefferzone:</label>
+                            <select id="hitboxSelect" class="calc-select">
+                                <option value="head">Kopf (Headshot 2.5x Multiplikator)</option>
+                                <option value="chest">Brust (Westen-Zone)</option>
+                                <option value="legs">Beine (Kein Westenschutz)</option>
+                            </select>
+                        </div>
+
+                        <div class="ctrl-box">
+                            <label class="ctrl-label">Rüstung des Ziels:</label>
+                            <select id="armorSelect" class="calc-select">
+                                <option value="vest">Taktische Schutzweste (100 AP, 75% Absorption)</option>
+                                <option value="none">Keine Weste (0 AP)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="calc-results-grid">
+                        <div class="res-card">
+                            <span class="res-title">SCHADEN AUF LEBEN (HP)</span>
+                            <div class="res-val" id="hpDamageVal">8.5 HP</div>
+                            <span class="res-sub" id="hpRemainingVal">Rest-HP: 91.5 / 100</span>
+                        </div>
+
+                        <div class="res-card">
+                            <span class="res-title">SCHADEN AUF WESTE (AP)</span>
+                            <div class="res-val green" id="armorDamageVal">25.5 AP</div>
+                            <span class="res-sub" id="armorRemainingVal">Rest-Weste: 74.5 / 100</span>
+                        </div>
+
+                        <div class="res-card highlight-res">
+                            <span class="res-title">SIMULATIONS-ERGEBNIS</span>
+                            <div class="res-val bright-green" id="lethalVerdictVal">ÜBERLEBT (3 Schüsse nötig)</div>
+                            <span class="res-sub" id="lethalNoteVal">Schutzweste absorbiert 75% des Rumpfschadens. Ziel überlebt den Einzeltreffer.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INGAME 3D CYBER LAPTOP SPOTLIGHT -->
+    <section class="section laptop-section" id="laptop">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-header">[DIE INGAME-WORKSTATION]</span>
+                <h2 class="section-title">DER 3D CYBER-LAPTOP IM BUNKER</h2>
+                <p class="section-desc">
+                    Kein abstraktes Menü: Dein Charakter interagiert direkt mit einem echten Ingame-Schreibtisch und eigenem Cyber-OS:
+                </p>
+            </div>
+
+            <div class="laptop-showcase-grid">
+                <div class="laptop-visual">
+                    <div class="laptop-screen-frame">
+                        <img src="assets/shot_laptop_os.png" alt="Ingame Cyber Laptop" class="laptop-screen-img">
+                        <div class="screen-badge">MAYHEM-OS v3.4.1 [ACTIVE]</div>
+                    </div>
+                </div>
+
+                <div class="laptop-apps-list">
+                    <div class="app-item">
+                        <div class="app-icon">💬</div>
+                        <div class="app-info">
+                            <h4>MayhemCord Messenger</h4>
+                            <p>Direktnachrichten mit Freunden, eigene Squad-Kanäle und Einsatz-Koordination direkt aus dem Bunker heraus.</p>
+                        </div>
+                    </div>
+
+                    <div class="app-item">
+                        <div class="app-icon">📋</div>
+                        <div class="app-info">
+                            <h4>Tägliche Missionen & Bounties</h4>
+                            <p>Rotierende Einsatzzwecke (Präzisionstreffer, Runden-Siege, Überlebenszeit) mit direktem Claim von XP und Credits.</p>
+                        </div>
+                    </div>
+
+                    <div class="app-item">
+                        <div class="app-icon">🏆</div>
+                        <div class="app-info">
+                            <h4>Ranked ELO & Abstiegsschutz</h4>
+                            <p>7 Ränge von Rekrut bis Grandmaster. Transparentes ELO-System mit Performance-Boni und Schutz vor schnellem Abstieg.</p>
+                        </div>
+                    </div>
+
+                    <div class="app-item">
+                        <div class="app-icon">📟</div>
+                        <div class="app-info">
+                            <h4>Bunker Terminal CLI</h4>
+                            <p>Integrierte Kommandozeile für Server-Nachrichten, System-Status und administrative Befehle (<code>/help</code>, <code>/specs</code>).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAMEMODES SECTION -->
+    <section class="section modes-section" id="modes">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-header">[EINSATZSZENARIEN]</span>
+                <h2 class="section-title">TAKTIK, TÄUSCHUNG & PHYSIK-SANDBOX</h2>
+                <p class="section-desc">
+                    Vom präzisen Rundenwettkampf bis zum physikalischen Experimentieren:
+                </p>
+            </div>
+
+            <div class="modes-grid-3">
+                <div class="mode-card">
+                    <div class="mode-header-stripe red">
+                        <span class="mode-badge">5v5 HARDCORE</span>
+                        <span class="mode-icon">🎯</span>
+                    </div>
+                    <div class="mode-content">
+                        <h3>Taktischer Bomben-Einsatz</h3>
+                        <p>
+                            Polizei vs. Gangster. Rundenbasierter Wettkampf mit Buy-Phase vor jedem Sturm, 
+                            präzisen Trefferzonen, 75% Schutzwesten-Absorption und ohne Respawns während der Runde.
+                        </p>
+                        <ul class="mode-specs">
+                            <li>✓ Tödliche Kopfschüsse</li>
+                            <li>✓ Taktische Schutzwesten & Helme</li>
+                            <li>✓ Kompetitive ELO-Wertung</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mode-card highlight-mode">
+                    <div class="mode-header-stripe olive">
+                        <span class="mode-badge">COMMUNITY MODUS</span>
+                        <span class="mode-icon">🛋️</span>
+                    </div>
+                    <div class="mode-content">
+                        <h3>Prop Hunt & Täuschung</h3>
+                        <p>
+                            Asymmetrischer Modus: Verwandle dich in Objekte der Spielumgebung und nutze geschickte Positionierung, 
+                            um den suchenden Jägern zu entkommen.
+                        </p>
+                        <ul class="mode-specs">
+                            <li>✓ 50+ verschiedene Props</li>
+                            <li>✓ Taktisches Pfeif-Signal</li>
+                            <li>✓ Perfekt für Gruppenrunden</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mode-card">
+                    <div class="mode-header-stripe green">
+                        <span class="mode-badge">PHYSICS SANDBOX</span>
+                        <span class="mode-icon">🧱</span>
+                    </div>
+                    <div class="mode-content">
+                        <h3>Physics Sandbox & Konstruktion</h3>
+                        <p>
+                            Nutze die Physics Gun, spawne Barrikaden, Rampen und Fahrzeuge und konstruiere mit Freunden 
+                            eigene Festungen oder experimentelle Parcours.
+                        </p>
+                        <ul class="mode-specs">
+                            <li>✓ Integrierte Physics Gun</li>
+                            <li>✓ Frei platzierbare Barrikaden & Props</li>
+                            <li>✓ Offline LAN & Direct IP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE CLI TERMINAL -->
+    <section class="section terminal-section" id="terminal">
+        <div class="container">
+            <div class="chat-wrapper">
+                <div class="chat-header-bar">
+                    <div class="window-controls">
+                        <span class="win-btn red"></span>
+                        <span class="win-btn yellow"></span>
+                        <span class="win-btn green"></span>
+                    </div>
+                    <div class="window-title">TACTICAL_MAYHEM_CLI // root@bunker-node:~</div>
+                    <div class="window-status">🟢 STATUS: READY</div>
+                </div>
+
+                <div class="chat-body" id="terminalLog">
+                    <div class="chat-msg">
+                        <span class="chat-time">[00:00:01]</span>
+                        <span class="chat-user green">SYSTEM:</span>
+                        <span class="chat-text">Tactical Mayhem Kernel v1.0.4 initialized. Telemetrie & DRM: deaktiviert.</span>
+                    </div>
+                    <div class="chat-msg">
+                        <span class="chat-time">[00:00:02]</span>
+                        <span class="chat-user olive">DEV:</span>
+                        <span class="chat-text">Verfügbare Befehle: <code>about</code>, <code>specs</code>, <code>modes</code>, <code>server</code>, <code>roadmap</code>, <code>download</code>, <code>help</code></span>
+                    </div>
+                </div>
+
+                <div class="chat-input-bar">
+                    <span class="input-prompt">dev@mayhem:~$</span>
+                    <input type="text" id="terminalInput" placeholder="Tippe einen Befehl (z.B. about, specs, roadmap, help)..." autocomplete="off">
+                    <button id="btnSendTerminal" class="btn-chat-send">AUSFÜHREN</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-header">[HÄUFIGE FRAGEN & COMMUNITY]</span>
+                <h2 class="section-title">KLARTEXT & TRANSPARENZ</h2>
+                <p class="section-desc">
+                    Direkte Antworten auf die wichtigsten Fragen zur Entwicklung und Technik:
+                </p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Wie finanziert sich das Projekt und bleibt es kostenlos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Tactical Mayhem ist ein unabhängiges Herzensprojekt und zu 100% kostenlos. 
+                            Es gibt keine Pay-to-Win Mechaniken, keine versteckten Abonnements und keine Bezahlschranken.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Wie kann ich Feedback einreichen oder Playtests beitreten?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Über unseren Community-Discord und das Community-Forum. Feedback zu Waffenbalance, Karten und neuen Modi 
+                            fließt direkt in die laufende Weiterentwicklung ein.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Muss ich einen Launcher installieren oder einen Account anlegen?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Nein. Du lädst einfach das Standalone-ZIP-Archiv herunter, entpackst es an einen beliebigen Ort und startest 
+                            <code>FreeGrounds.exe</code>. Keine Registrierung, keine Spyware.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Welche Hardware-Voraussetzungen gelten für flüssiges Spielen?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Das Spiel läuft flüssig mit 60+ FPS ab einer GTX 960 / Radeon RX 470 und 8 GB RAM. 
+                            16 GB RAM werden für große Sandbox-Szenarien empfohlen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Wie funktioniert der Multiplayer ohne Master-Server?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Das Spiel verfügt über einen integrierten Server Browser sowie LAN- und Direct-IP-Unterstützung. 
+                            Jeder Spieler kann direkt im Hauptmenü eine Lobby öffnen und Freunde einladen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOAD SECTION -->
+    <section class="section download-section" id="download">
+        <div class="container">
+            <div class="download-container">
+                <div class="download-header-box">
+                    <span class="sub-header">[STANDALONE RELEASE]</span>
+                    <h2 class="download-headline">TACTICAL MAYHEM v1.0.4 HERUNTERLADEN</h2>
+                    <p class="download-lead">
+                        Kein Launcher, kein DRM. ZIP-Archiv herunterladen, entpacken und sofort über 
+                        <span class="code">FreeGrounds.exe</span> starten.
+                    </p>
+                </div>
+
+                <div class="download-btn-wrap">
+                    <a href="FreeGrounds_v1.0.4.zip" class="btn btn-tarkov-download" id="btnDownloadMain">
+                        <span class="dl-symbol">⬇</span>
+                        <div class="dl-details">
+                            <span class="dl-title">TACTICAL MAYHEM v1.0.4 DOWNLOADEN</span>
+                            <span class="dl-meta">Windows 64-Bit Standalone • 1.9 GB (.ZIP) • 100% Kostenlos</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hardware-specs-row">
+                    <div class="spec-col">
+                        <span class="spec-label">BETRIEBSSYSTEM:</span>
+                        <span class="spec-val">Windows 10 / 11 (64-Bit)</span>
+                    </div>
+                    <div class="spec-col">
+                        <span class="spec-label">ARBEITSSPEICHER:</span>
+                        <span class="spec-val">8 GB RAM (16 GB empfohlen)</span>
+                    </div>
+                    <div class="spec-col">
+                        <span class="spec-label">GRAFIKKARTE:</span>
+                        <span class="spec-val">GTX 960 / RX 470 oder besser</span>
+                    </div>
+                    <div class="spec-col">
+                        <span class="spec-label">MULTIPLAYER:</span>
+                        <span class="spec-val">LAN / Direct IP / Server Browser</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="tactical-footer">
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <img src="assets/tactical_mayhem_logo.jpg" alt="Tactical Mayhem Logo" class="footer-mascot-img">
+                <div class="footer-meta">
+                    <span class="footer-title">TACTICAL MAYHEM</span>
+                    <span class="footer-tagline">Standalone Indie Hardcore Taktik & Cyber-Bunker. Information wants to be free.</span>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <a href="#about">Start ↑</a>
+                <a href="#ballistics">Ballistik</a>
+                <a href="#laptop">Cyber Laptop</a>
+                <a href="#modes">Modi</a>
+                <a href="#terminal">Terminal</a>
+                <a href="#faq">FAQ</a>
+                <a href="#download">Download</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>Unabhängig entwickelt für die Community. Keine Datenkraken, kein DRM.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
